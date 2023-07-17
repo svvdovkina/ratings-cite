@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stylelint": "stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
     "@types/node": "20.4.2",
@@ -18,5 +20,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "stylelint": "^15.10.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-order-config-standard": "^0.1.3"
   }
 }

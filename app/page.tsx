@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
+  const a = 1;
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -86,6 +87,7 @@ export default function Home() {
             Deploy <span>-&gt;</span>
           </h2>
           <p>
+            HERE!!! {a}
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
